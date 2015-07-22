@@ -65,8 +65,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uUp-Ul-nzx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="108" id="Ekv-hk-EmV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uUp-Ul-nzx" secondAttribute="trailing" constant="225" id="GMT-cn-gXY"/>
-                            <constraint firstItem="uUp-Ul-nzx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="225" id="I7n-9S-7rt"/>
                             <constraint firstItem="uUp-Ul-nzx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="VeF-1j-pln"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uUp-Ul-nzx" secondAttribute="trailing" constant="50" id="ccV-Ob-NOi"/>
                             <constraint firstItem="uUp-Ul-nzx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="vJ8-1h-qmT"/>
@@ -75,6 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-372" y="30"/>
         </scene>
     </scenes>
 </document>

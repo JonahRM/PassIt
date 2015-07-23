@@ -1,5 +1,5 @@
 //
-//  AboutViewController.swift
+//  StaticViewController.swift
 //  PassIt
 //
 //  Created by Jonah May on 7/23/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutViewController: UIViewController {
+class StaticViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

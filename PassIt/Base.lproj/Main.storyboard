@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PassIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PassIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,6 +38,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="rmE-ko-Nf9" kind="show" id="6P2-qc-daa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsI-dX-Avh">
                                         <rect key="frame" x="84" y="155.5" width="32" height="30"/>
@@ -100,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="350" y="-2076"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="JuM-hO-hND">
             <objects>
-                <viewController id="47C-vv-UIb" sceneMemberID="viewController">
+                <viewController id="47C-vv-UIb" customClass="AboutViewController" customModule="PassIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O6Z-KW-ePj"/>
                         <viewControllerLayoutGuide type="bottom" id="OfK-8r-0Aq"/>
@@ -136,11 +139,35 @@
                             <constraint firstItem="Xhu-kJ-U21" firstAttribute="centerY" secondItem="zAD-qQ-Jgs" secondAttribute="centerY" id="wV1-ue-xxn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lUC-2U-Hpg"/>
+                    <navigationItem key="navigationItem" id="lUC-2U-Hpg">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="2mI-Fd-6Jj">
+                            <connections>
+                                <action selector="goBack:" destination="47C-vv-UIb" id="Iau-fP-cAM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfY-wi-Vc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="326" y="-2867"/>
+            <point key="canvasLocation" x="290" y="-2811"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0R3-bu-gie">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rmE-ko-Nf9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c3i-eA-htw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="47C-vv-UIb" kind="relationship" relationship="rootViewController" id="jez-Rr-kUb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3h-0M-38p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-498" y="-2811"/>
         </scene>
     </scenes>
     <resources>

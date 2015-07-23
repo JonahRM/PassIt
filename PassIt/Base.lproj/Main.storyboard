@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,58 +17,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-Ul-nzx">
-                                <rect key="frame" x="70" y="51" width="460" height="230.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-Ul-nzx">
+                                <rect key="frame" x="70" y="51" width="200" height="460.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PassIt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjC-mV-n7h">
-                                        <rect key="frame" x="0.0" y="0.0" width="460" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PassIt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjC-mV-n7h">
+                                        <rect key="frame" x="77" y="0.0" width="46" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="highlightedColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Lb-yAO">
-                                        <rect key="frame" x="0.0" y="60.5" width="460" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Lb-yAO">
+                                        <rect key="frame" x="45" y="60.5" width="110" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Your Dashboard">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-kM-fWS">
-                                        <rect key="frame" x="0.0" y="130.5" width="460" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-kM-fWS">
+                                        <rect key="frame" x="79" y="130.5" width="42" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="About">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsI-dX-Avh">
-                                        <rect key="frame" x="0.0" y="200.5" width="460" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsI-dX-Avh">
+                                        <rect key="frame" x="84" y="200.5" width="32" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Help">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="190" image="princetonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2EJ-su-e5f">
+                                        <rect key="frame" x="0.0" y="270.5" width="200" height="190"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2EJ-su-e5f" secondAttribute="height" multiplier="37:35" id="NeZ-WQ-v1L"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="9Qc-kM-fWS" firstAttribute="leading" secondItem="uUp-Ul-nzx" secondAttribute="leading" id="1Rx-3M-2p8"/>
-                                    <constraint firstItem="F4k-Lb-yAO" firstAttribute="leading" secondItem="uUp-Ul-nzx" secondAttribute="leading" id="Reh-bX-KBB"/>
-                                    <constraint firstItem="dsI-dX-Avh" firstAttribute="leading" secondItem="uUp-Ul-nzx" secondAttribute="leading" id="Zp2-a3-aPx"/>
-                                    <constraint firstAttribute="trailing" secondItem="F4k-Lb-yAO" secondAttribute="trailing" id="aGc-F0-p3o"/>
-                                    <constraint firstAttribute="trailing" secondItem="9Qc-kM-fWS" secondAttribute="trailing" id="cT4-fG-al6"/>
-                                    <constraint firstItem="SjC-mV-n7h" firstAttribute="leading" secondItem="uUp-Ul-nzx" secondAttribute="leading" id="igV-DW-pAF"/>
-                                    <constraint firstAttribute="trailing" secondItem="SjC-mV-n7h" secondAttribute="trailing" id="pXr-kc-9qv"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="uUp-Ul-nzx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="108" id="Ekv-hk-EmV"/>
-                            <constraint firstItem="uUp-Ul-nzx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="VeF-1j-pln"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uUp-Ul-nzx" secondAttribute="trailing" constant="50" id="ccV-Ob-NOi"/>
-                            <constraint firstItem="uUp-Ul-nzx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="vJ8-1h-qmT"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,4 +67,7 @@
             <point key="canvasLocation" x="-372" y="30"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="princetonLogo" width="407" height="385"/>
+    </resources>
 </document>

@@ -39,7 +39,7 @@
                                             <color key="titleShadowColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="47C-vv-UIb" kind="show" id="zZN-qc-0qN"/>
+                                            <segue destination="D6c-x5-1g3" kind="show" id="zZN-qc-0qN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsI-dX-Avh">
@@ -49,7 +49,7 @@
                                             <color key="titleShadowColor" red="1" green="0.5312792449" blue="0.23150685269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="jx3-wQ-4dF" kind="show" id="AQz-jt-qeO"/>
+                                            <segue destination="sPY-hb-Wgd" kind="show" id="AQz-jt-qeO"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="190" image="princetonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2EJ-su-e5f">
@@ -100,10 +100,11 @@
                             <constraint firstItem="zJ8-Ev-tIM" firstAttribute="centerX" secondItem="kuV-5S-lSI" secondAttribute="centerX" id="ThG-fq-rrB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="V9c-Zi-IhU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMH-1y-Ro0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-462" y="-2076"/>
+            <point key="canvasLocation" x="350" y="-2076"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JuM-hO-hND">
@@ -141,10 +142,47 @@
                             <constraint firstItem="Xhu-kJ-U21" firstAttribute="centerY" secondItem="zAD-qQ-Jgs" secondAttribute="centerY" id="wV1-ue-xxn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lUC-2U-Hpg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfY-wi-Vc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="350" y="-2867"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="af2-3F-jLm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D6c-x5-1g3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EHN-ha-Xlx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="47C-vv-UIb" kind="relationship" relationship="rootViewController" id="9Wm-jQ-Ep7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQf-3Q-jyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-462" y="-2867"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aXa-rZ-O6B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sPY-hb-Wgd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9kb-0n-JPP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jx3-wQ-4dF" kind="relationship" relationship="rootViewController" id="7Lj-6Z-MTX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3n-3q-Ju8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-462" y="-2076"/>
         </scene>
     </scenes>
     <resources>

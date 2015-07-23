@@ -142,7 +142,9 @@
                             <constraint firstItem="Xhu-kJ-U21" firstAttribute="centerY" secondItem="zAD-qQ-Jgs" secondAttribute="centerY" id="wV1-ue-xxn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lUC-2U-Hpg"/>
+                    <navigationItem key="navigationItem" id="lUC-2U-Hpg">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="KBn-gT-0WA"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfY-wi-Vc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
